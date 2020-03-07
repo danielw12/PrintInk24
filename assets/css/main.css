@@ -84,7 +84,7 @@ header {
   position: relative; }
   header .wrapper .logo {
     width: 100px;
-    height: auto; }
+    height: 100px; }
   header .responsive {
     width: 100%;
     position: absolute;
