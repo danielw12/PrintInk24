@@ -16,9 +16,39 @@ $(document).ready(function(){
   slidesToShow: 3,
   slidesToScroll: 3,
       autoplay: true,
-      autoplaySpeed: 5000   
+      autoplaySpeed: 5000,
+       responsive: [
+           {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+           },
+    {
+      breakpoint: 426,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+          arrows: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
     });
+
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.return').fadeIn();
+  } else {
+    $('.return').fadeOut();
+  }
+});
 
 $("#offerElement").click(function(){
   $("#offerElement").toggleClass("invert");
