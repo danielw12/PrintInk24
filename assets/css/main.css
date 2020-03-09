@@ -78,7 +78,7 @@ h2 {
   padding-top: 50px; }
 
 .site-header {
-  padding: 20% 0; }
+  padding: 15% 0; }
 
 header {
   position: relative; }
@@ -160,6 +160,9 @@ footer {
     font-size: 15px; }
   footer .contact, footer .offer {
     padding: 20px 15px; }
+    footer .contact h4, footer .offer h4 {
+      font-weight: bold;
+      text-transform: uppercase; }
   footer .mrgoat {
     padding-right: 30px; }
 
