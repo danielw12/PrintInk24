@@ -18,6 +18,9 @@
 .spec-2 {
   font-size: 25px; }
 
+.merchandise--offer-box {
+  cursor: pointer; }
+
 .box {
   background-color: white;
   -webkit-box-shadow: 0 2px 2px black;

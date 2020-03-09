@@ -162,7 +162,8 @@ footer {
     padding: 20px 15px; }
     footer .contact h4, footer .offer h4 {
       font-weight: bold;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 20px; }
   footer .mrgoat {
     padding-right: 30px; }
 
