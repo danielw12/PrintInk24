@@ -4,6 +4,7 @@ html {
 
 body {
     background-image: url(../img/bg-s.jpg);
+    background-size: 37.5px;
     background-repeat: repeat;
 }
 
@@ -96,6 +97,8 @@ h2 {
 }
 
 
+
+
 .middle {
     display: flex;
   flex-direction: row;
@@ -113,9 +116,9 @@ header {
 .wrapper {
 
     .logo {
-        width: 100px;
-        height: 100px;
-        max-height: 100px;        
+        width: 145px;
+       
+        max-height: 145px;        
     }    
 }
     
