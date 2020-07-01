@@ -113,6 +113,21 @@ $("#offerElement12").click(function(){
     $("#offerElement12>.row>.info>p").toggleClass("weight");
 });
 
+$("#offerElement13").click(function(){
+  $("#bg13").toggleClass("invert");
+    $("#offerElement13>.row>.info>p").toggleClass("weight");
+});
+
+$("#offerElement14").click(function(){
+  $("#bg14").toggleClass("invert");
+    $("#offerElement14>.row>.info>p").toggleClass("weight");
+});
+
+$("#offerElement15").click(function(){
+  $("#bg15").toggleClass("invert");
+    $("#offerElement15>.row>.info>p").toggleClass("weight");
+});
+
 
 
 
