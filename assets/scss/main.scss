@@ -210,6 +210,8 @@ footer {
         
         p {
             font-size: 14px;
+            word-break: keep-all;
+            hyphens: none;
         }
     }
     
@@ -229,7 +231,11 @@ footer {
        
     }  
         
-    
+    .boss-box {
+        h5 {
+            margin-bottom: 16px;
+        }
+    }
 }
 
 .return {

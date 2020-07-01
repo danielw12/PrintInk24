@@ -158,7 +158,11 @@ footer {
   color: white;
   margin-top: 170px; }
   footer .offer p {
-    font-size: 14px; }
+    font-size: 14px;
+    word-break: keep-all;
+    -webkit-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none; }
   footer .contact, footer .offer {
     padding: 20px 15px; }
     footer .contact h4, footer .offer h4 {
@@ -167,6 +171,8 @@ footer {
       margin-bottom: 20px; }
   footer .mrgoat {
     margin-right: 15%; }
+  footer .boss-box h5 {
+    margin-bottom: 16px; }
 
 .return {
   display: none;
