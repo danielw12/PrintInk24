@@ -196,6 +196,8 @@ header {
     }
 }
 
+/*stopka*/
+
 
 footer {
     border-top: 3px solid white;
@@ -207,7 +209,7 @@ footer {
     .offer {
         
         p {
-            font-size: 15px;
+            font-size: 14px;
         }
     }
     
@@ -222,10 +224,11 @@ footer {
     }
         
        
+    .mrgoat {
+        margin-right: 15%;
+       
+    }  
         
-        .mrgoat {
-           padding-right: 30px;
-        }
     
 }
 
@@ -281,6 +284,13 @@ footer {
     
    
 }
+
+.contact {
+    width: 100%;
+        p {
+            font-size: 14px;
+        }
+    }
 
 .invert {
     padding-top: 20px;
@@ -346,10 +356,12 @@ footer {
 
 
 @media (min-width: 1024px) {
-    .offer, .contact {
+    .offer {
         width: 50%;
-        p {
-            font-size: 15px;
-        }
+padding-right: 8% !important;
+    }
+    
+    .contact {
+        width: 50%;
     }
 }
