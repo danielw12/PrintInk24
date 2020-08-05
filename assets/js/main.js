@@ -5,8 +5,12 @@ $(document).ready(function(){
   slidesToShow: 1,
   slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 10000,
-      arrows: false
+      autoplaySpeed: 1000000,
+      arrows: false,
+      dots: true,
+      fade: true,
+  cssEase: 'linear'
+      
 });
     });
 

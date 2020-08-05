@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,9 +8,9 @@ body {
     background-repeat: repeat;
 }
 
-a {
+/*a {
     display: inline-block;
-}
+}*/
 
 a:hover {
     text-decoration: none;
@@ -40,7 +40,7 @@ h2 {
 
 .nav-box {
     background-color: #152b58e6; //    box-shadow: 2px 0 5px black;
-    border-bottom: 3px solid white;
+    /* border-bottom: 3px solid white;*/
     position: sticky;
     top: 0;
     z-index: 3000;
@@ -53,10 +53,11 @@ h2 {
             justify-content: center;
 
             div {
-               
+
                 width: 150px;
                 border-radius: 20px;
                 text-align: center;
+
                 a {
                     color: white;
                     line-height: 16px;
@@ -72,22 +73,22 @@ h2 {
             }
         }
     }
-    
+
     .navbar {
-       position: relative;
-        
+        position: relative;
+
         .home {
             position: absolute;
-            top: 11px; 
+            top: 11px;
             left: 0;
-  
+
             cursor: pointer;
-            
+
             p {
                 margin-bottom: 0;
                 color: white;
                 text-transform: uppercase;
-                
+
                 i {
                     font-size: 20px;
                 }
@@ -99,48 +100,152 @@ h2 {
 
 
 
-.middle {
-    display: flex;
-  flex-direction: row;
-  padding-top: 50px;
-}
+
 
 .site-header {
-        padding: 15% 0;  
-    }
+    padding: 15% 0;
+}
 
 header {
     position: relative;
-     
-    
-.wrapper {
+    overflow: auto;
 
-    .logo {
-        width: 145px;
-       
-        max-height: 145px;        
-    }    
-}
-    
+
+    /* main slider */
+
     .responsive {
+        background-color: white;
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0%;
-        z-index: -1;
+        height: 100%;
+
+
+        .slide {
+            display: flex;
+            width: 100%;
+
+
+/* lewa komórka */
+            #bg1 {
+                background-image: url(../img/slider/wizytowki_844x626.png);
+            }
+            
+            #bg2 {
+                background-image: url(../img/slider/zaproszenia_844x626.png);
+            }
+            
+             #bg3 {
+                background-image: url(../img/slider/identyfikatory_844x626.png);
+            }
+            
+             #bg4 {
+                background-image: url(../img/slider/etykiety_844x626.png);
+            }
+            
+            .bg-left {
+                width: 100%;
+                
+                
+                background-size: cover; 
+                background-repeat: no-repeat;
+                background-position: center;
+               /* width: 45%;
+                padding-left: 20%;
+                padding-right: 15px;
+*/
+                
+                div {
+                    margin-bottom: 50px;
+                     background-color:  rgba(0, 107, 187, 0.5); 
+                    width: 100%;
+                    height: 100%;
+                    padding: 10%;
+                }
+                .middle {
+                    margin: 0 auto;
+                   /* display: flex;
+                    margin-bottom: 50px;
+
+                    padding-top: 50px;*/
+
+
+                    .logo {
+                        margin: 0 auto;
+                        width: 130px;
+                       /* filter: invert(1);*/
+                        max-height: 130px;
+                    }
+
+                    p {
+                        /*margin-top: 38px;
+                        margin-left: 10px;*/
+                        color: white;
+                        text-decoration: none;
+                        font-size: 25px;
+                        font-weight: 900;
+                    }
+
+                }
+
+
+                h3,
+                p {
+                    text-align: center;
+                    color: white;
+                  /*  margin-left: 10px;
+                    margin-right: 80px;*/
+                }
+
+                h3 {
+                    font-weight: 900;
+                    font-size: 35px;
+                }
+
+                p {
+                    font-weight: 600;
+                }
+            }
+            
+            /*prawa połówka */
+
+            .bg-right {
+                display: none;
+               /* width: 55%;*/
+            }
+        }
+
+       
+    }
+
+    /*nawigacja slidera */
+    .slick-dots {
         
-        .red {
-            height: 500px;
-            width: 500px;
-            margin-left: 60%;
-            display: block;
-            background-color: red;
+         bottom: 46px;
+      /*  bottom: 300px;
+        left: -510px;*/
+
+        li {
+            button {
+                height: 40px;
+                width: 40px;
+            }
+
+            button:before {
+                transform: scale(2);
+            }
+        }
+
+        li.slick-active {
+
+            button:before {
+                color: white;
+            }
         }
     }
 }
 
 .merchandise {
     margin-top: 40px;
+
     div {
         background-color: white;
         box-shadow: 0 2px 2px black;
@@ -149,6 +254,9 @@ header {
         border-radius: 20px;
         transition: .5s;
 
+        a {
+            color: black;
+        }
 
         img {
             width: 50%;
@@ -181,18 +289,19 @@ header {
 .logo-box {
     width: 100%;
     padding: 25px 0;
-   
+
     img {
         width: 100%;
     }
 }
 
 .logos {
-   padding: 0 15px;
+    padding: 0 15px;
+
     img {
         width: 100%;
         border-radius: 20px;
-        
+
     }
 }
 
@@ -202,35 +311,36 @@ header {
 footer {
     border-top: 3px solid white;
     background-color: #000000c7;
-   padding: 15px 0;
+    padding: 15px 0;
     color: white;
     margin-top: 170px;
-    
+
     .offer {
-        
+
         p {
             font-size: 14px;
             word-break: keep-all;
             hyphens: none;
         }
     }
-    
-    .contact, .offer {
+
+    .contact,
+    .offer {
         padding: 20px 15px;
-        
+
         h4 {
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 20px;
         }
     }
-        
-       
+
+
     .mrgoat {
         margin-right: 15%;
-       
-    }  
-        
+
+    }
+
     .boss-box {
         h5 {
             margin-bottom: 16px;
@@ -240,69 +350,70 @@ footer {
 
 .return {
     display: none;
-     height: 50px;
+    height: 50px;
     width: 50px;
     background-color: black;
     border: 1px solid white;
     font-size: 25px;
-   margin: 0 auto;
+    margin: 0 auto;
     background-color: white;
     border-radius: 50%;
     position: fixed;
     bottom: 20px;
     right: 20px;
     box-shadow: 0 0 3px 1px black;
-    
+
     a {
         width: 100%;
         height: 100%;
-            display: flex;
-  align-items: center;
-  justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #006aba;
     }
-    
-   
+
+
 }
 
-.go-down{
+.go-down {
     height: 50px;
     width: 50px;
     background-color: black;
     border: 1px solid white;
     font-size: 25px;
-   margin: 0 auto;
+    margin: 0 auto;
     background-color: white;
     border-radius: 50%;
-    
+
     a {
         width: 100%;
         height: 100%;
-            display: flex;
-  align-items: center;
-  justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #006aba;
-        
+
         i {
             font-weight: bold;
         }
     }
-    
-   
+
+
 }
 
 .contact {
     width: 100%;
-        p {
-            font-size: 14px;
-        }
+
+    p {
+        font-size: 14px;
     }
+}
 
 .invert {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #ffffff38;
-   transition: 1s;
+    transition: 1s;
     margin-bottom: 20px;
 }
 
@@ -326,37 +437,37 @@ footer {
         text-align: center;
         margin-bottom: 20px;
     }
-    
+
     h2 {
         font-size: 25px;
         text-align: center;
     }
-      
+
     .spec {
         font-size: 20px;
         text-align: center;
     }
-    
+
     .merchandise-offer {
         margin: 0 auto !important;
         display: block;
     }
-    
-        .logo {
-            margin: 0 auto;
-            display: block;
-        }
-    
+
+    .logo {
+        margin: 0 auto;
+        display: block;
+    }
+
 }
 
 @media (min-width: 768px) {
-    .merchandise--offer-box{
+    .merchandise--offer-box {
         display: flex;
     }
-    
+
     .boss-box {
-          display: flex;
-      
+        display: flex;
+
     }
 }
 
@@ -364,9 +475,9 @@ footer {
 @media (min-width: 1024px) {
     .offer {
         width: 50%;
-padding-right: 8% !important;
+        padding-right: 8% !important;
     }
-    
+
     .contact {
         width: 50%;
     }
@@ -417,12 +528,14 @@ padding-right: 8% !important;
     padding-right: 15px;
     padding-left: 15px;
 }
+
 .col-2dot4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
 }
+
 @media (min-width: 540px) {
     .col-sm-2dot4 {
         -webkit-box-flex: 0;
@@ -431,6 +544,7 @@ padding-right: 8% !important;
         max-width: 20%;
     }
 }
+
 @media (min-width: 720px) {
     .col-md-2dot4 {
         -webkit-box-flex: 0;
@@ -439,6 +553,7 @@ padding-right: 8% !important;
         max-width: 20%;
     }
 }
+
 @media (min-width: 960px) {
     .col-lg-2dot4 {
         -webkit-box-flex: 0;
@@ -447,6 +562,7 @@ padding-right: 8% !important;
         max-width: 20%;
     }
 }
+
 @media (min-width: 1140px) {
     .col-xl-2dot4 {
         -webkit-box-flex: 0;

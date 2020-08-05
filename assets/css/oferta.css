@@ -1,3 +1,7 @@
+header .wrapper .logo {
+  width: 145px;
+  max-height: 145px; }
+
 .info-O {
   margin-top: 20px;
   color: white; }

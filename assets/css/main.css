@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth; }
 
@@ -6,9 +7,9 @@ body {
   background-size: 37.5px;
   background-repeat: repeat; }
 
-a {
-  display: inline-block; }
-
+/*a {
+    display: inline-block;
+}*/
 a:hover {
   text-decoration: none; }
 
@@ -30,7 +31,7 @@ h2 {
 
 .nav-box {
   background-color: #152b58e6;
-  border-bottom: 3px solid white;
+  /* border-bottom: 3px solid white;*/
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -68,36 +69,92 @@ h2 {
         .nav-box .navbar .home p i {
           font-size: 20px; }
 
-.middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-top: 50px; }
-
 .site-header {
   padding: 15% 0; }
 
 header {
-  position: relative; }
-  header .wrapper .logo {
-    width: 145px;
-    max-height: 145px; }
+  position: relative;
+  overflow: auto;
+  /* main slider */
+  /*nawigacja slidera */ }
   header .responsive {
+    background-color: white;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0%;
-    z-index: -1; }
-    header .responsive .red {
-      height: 500px;
-      width: 500px;
-      margin-left: 60%;
-      display: block;
-      background-color: red; }
+    height: 100%; }
+    header .responsive .slide {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      /* lewa komórka */
+      /*prawa połówka */ }
+      header .responsive .slide #bg1 {
+        background-image: url(../img/slider/wizytowki_844x626.png); }
+      header .responsive .slide #bg2 {
+        background-image: url(../img/slider/zaproszenia_844x626.png); }
+      header .responsive .slide #bg3 {
+        background-image: url(../img/slider/identyfikatory_844x626.png); }
+      header .responsive .slide #bg4 {
+        background-image: url(../img/slider/etykiety_844x626.png); }
+      header .responsive .slide .bg-left {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+               /* width: 45%;
+                padding-left: 20%;
+                padding-right: 15px;
+*/ }
+        header .responsive .slide .bg-left div {
+          margin-bottom: 50px;
+          background-color: rgba(0, 107, 187, 0.5);
+          width: 100%;
+          height: 100%;
+          padding: 10%; }
+        header .responsive .slide .bg-left .middle {
+          margin: 0 auto;
+                   /* display: flex;
+                    margin-bottom: 50px;
+
+                    padding-top: 50px;*/ }
+          header .responsive .slide .bg-left .middle .logo {
+            margin: 0 auto;
+            width: 130px;
+            /* filter: invert(1);*/
+            max-height: 130px; }
+          header .responsive .slide .bg-left .middle p {
+            /*margin-top: 38px;
+            margin-left: 10px;*/
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 900; }
+        header .responsive .slide .bg-left h3,
+        header .responsive .slide .bg-left p {
+          text-align: center;
+          color: white;
+          /*  margin-left: 10px;
+            margin-right: 80px;*/ }
+        header .responsive .slide .bg-left h3 {
+          font-weight: 900;
+          font-size: 35px; }
+        header .responsive .slide .bg-left p {
+          font-weight: 600; }
+      header .responsive .slide .bg-right {
+        display: none;
+        /* width: 55%;*/ }
+  header .slick-dots {
+    bottom: 46px;
+    /*  bottom: 300px;
+      left: -510px;*/ }
+    header .slick-dots li button {
+      height: 40px;
+      width: 40px; }
+    header .slick-dots li button:before {
+      -webkit-transform: scale(2);
+              transform: scale(2); }
+    header .slick-dots li.slick-active button:before {
+      color: white; }
 
 .merchandise {
   margin-top: 40px; }
@@ -110,6 +167,8 @@ header {
     border-radius: 20px;
     -webkit-transition: .5s;
     transition: .5s; }
+    .merchandise div a {
+      color: black; }
     .merchandise div img {
       width: 50%;
       margin: 0 auto;
@@ -163,9 +222,11 @@ footer {
     -webkit-hyphens: none;
         -ms-hyphens: none;
             hyphens: none; }
-  footer .contact, footer .offer {
+  footer .contact,
+  footer .offer {
     padding: 20px 15px; }
-    footer .contact h4, footer .offer h4 {
+    footer .contact h4,
+    footer .offer h4 {
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 20px; }
