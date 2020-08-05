@@ -53,82 +53,82 @@ $(document).scroll(function() {
 });
 
 $("#offerElement1").click(function(){
-  $("#bg1").toggleClass("invert");
+  $("#it1").toggleClass("invert");
     $("#offerElement>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement2").click(function(){
-  $("#bg2").toggleClass("invert");
+  $("#it2").toggleClass("invert");
     $("#offerElement2>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement3").click(function(){
-  $("#bg3").toggleClass("invert");
+  $("#it3").toggleClass("invert");
     $("#offerElement3>.row>.info>p").toggleClass("weight");
 });
 
 
 $("#offerElement4").click(function(){
-  $("#bg4").toggleClass("invert");
+  $("#it4").toggleClass("invert");
     $("#offerElement4>.row>.info>p").toggleClass("weight");
 });
 
 
 $("#offerElement5").click(function(){
-  $("#bg5").toggleClass("invert");
+  $("#it5").toggleClass("invert");
     $("#offerElement5>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement6").click(function(){
-  $("#bg6").toggleClass("invert");
+  $("#it6").toggleClass("invert");
     $("#offerElement6>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement7").click(function(){
-  $("#bg7").toggleClass("invert");
+  $("#it7").toggleClass("invert");
     $("#offerElement7>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement8").click(function(){
-  $("#bg8").toggleClass("invert");
+  $("#it8").toggleClass("invert");
     $("#offerElement8>.row>.info>p").toggleClass("weight");
 });
 
 
 $("#offerElement9").click(function(){
-  $("#bg9").toggleClass("invert");
+  $("#it9").toggleClass("invert");
     $("#offerElement9>.row>.info>p").toggleClass("weight");
 });
 
 
 $("#offerElement10").click(function(){
-  $("#bg10").toggleClass("invert");
+  $("#it10").toggleClass("invert");
     $("#offerElement10>.row>.info>p").toggleClass("weight");
 });
 
 
 $("#offerElement11").click(function(){
-  $("#bg11").toggleClass("invert");
+  $("#it11").toggleClass("invert");
     $("#offerElement11>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement12").click(function(){
-  $("#bg12").toggleClass("invert");
+  $("#it12").toggleClass("invert");
     $("#offerElement12>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement13").click(function(){
-  $("#bg13").toggleClass("invert");
+  $("#it13").toggleClass("invert");
     $("#offerElement13>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement14").click(function(){
-  $("#bg14").toggleClass("invert");
+  $("#it14").toggleClass("invert");
     $("#offerElement14>.row>.info>p").toggleClass("weight");
 });
 
 $("#offerElement15").click(function(){
-  $("#bg15").toggleClass("invert");
+  $("#it15").toggleClass("invert");
     $("#offerElement15>.row>.info>p").toggleClass("weight");
 });
 

@@ -25,7 +25,9 @@ header {
 }
 
 .merchandise--offer-box {
+    display: block;
     cursor: pointer;
+    text-align: center;
 }
 
 .box {
@@ -37,8 +39,15 @@ header {
        
     }
 
+.offer-element {
+   
+   padding: 65px 20px;
+    
+    border-radius: 30px;
+}
+
 .merchandise-offer {
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
   
     cursor: pointer;
     width: 160px;
@@ -69,6 +78,7 @@ header {
 
 .content-box {
     padding: 40px;
+    text-align: center;
 }
 
 .xc {

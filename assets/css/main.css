@@ -305,12 +305,6 @@ footer {
 .weight {
   font-weight: bold; }
 
-.offer-element {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  border-radius: 30px; }
-
 /* RWD */
 @media (max-width: 426px) {
   h1 {
@@ -326,23 +320,23 @@ footer {
     font-size: 20px;
     text-align: center; }
 
-  .merchandise-offer {
-    margin: 0 auto !important;
-    display: block; }
-
   .logo {
     margin: 0 auto;
     display: block; } }
 @media (min-width: 768px) {
   .merchandise--offer-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    text-align: left !important; }
 
   .boss-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+@media (min-width: 992px) {
+  .content-box {
+    text-align: left !important; } }
 @media (min-width: 1024px) {
   .offer {
     width: 50%;

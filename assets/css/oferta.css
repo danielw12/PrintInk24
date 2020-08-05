@@ -23,7 +23,9 @@ header .wrapper .logo {
   font-size: 25px; }
 
 .merchandise--offer-box {
-  cursor: pointer; }
+  display: block;
+  cursor: pointer;
+  text-align: center; }
 
 .box {
   background-color: white;
@@ -32,8 +34,12 @@ header .wrapper .logo {
   width: 100%;
   border-radius: 20px; }
 
+.offer-element {
+  padding: 65px 20px;
+  border-radius: 30px; }
+
 .merchandise-offer {
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   cursor: pointer;
   width: 160px; }
   .merchandise-offer div {
@@ -55,7 +61,8 @@ header .wrapper .logo {
       margin-top: 10px; }
 
 .content-box {
-  padding: 40px; }
+  padding: 40px;
+  text-align: center; }
 
 .xc {
   -webkit-box-orient: horizontal;
