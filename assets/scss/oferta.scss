@@ -44,6 +44,10 @@ header {
    padding: 65px 20px;
     
     border-radius: 30px;
+    
+    p {
+        margin-bottom: 0;
+    }
 }
 
 .merchandise-offer {
@@ -83,4 +87,8 @@ header {
 
 .xc {
     flex-direction: row-reverse;
+}
+
+.read-more {
+    margin-bottom: 10px !important;
 }

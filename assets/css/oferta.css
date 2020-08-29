@@ -37,6 +37,8 @@ header .wrapper .logo {
 .offer-element {
   padding: 65px 20px;
   border-radius: 30px; }
+  .offer-element p {
+    margin-bottom: 0; }
 
 .merchandise-offer {
   margin: 0 auto 20px auto;
@@ -69,5 +71,8 @@ header .wrapper .logo {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
+
+.read-more {
+  margin-bottom: 10px !important; }
 
 /*# sourceMappingURL=oferta.css.map */
