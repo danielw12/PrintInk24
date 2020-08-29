@@ -388,6 +388,8 @@ footer {
   .rodo a {
     text-decoration: none;
     color: white; }
+  .rodo a:hover {
+    color: #006aba; }
 
 /* RWD */
 @media (max-width: 426px) {
