@@ -2,6 +2,10 @@ header .wrapper .logo {
   width: 145px;
   max-height: 145px; }
 
+h1 {
+  font-weight: bold;
+  text-shadow: 3px 3px 1px #152b58e6; }
+
 .info-O {
   margin-top: 20px;
   color: white; }
