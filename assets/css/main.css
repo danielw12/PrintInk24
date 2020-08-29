@@ -135,7 +135,10 @@ h2 {
     left: 10%;
     margin-left: 20px; }
     .slick-dots .slick-active button:before {
-      color: #006aba !important; } }
+      color: #006aba !important; }
+
+  .offer-element {
+    padding: 20px 20px !important; } }
 .site-header {
   padding: 15% 0; }
 
