@@ -116,6 +116,9 @@ h2 {
           -ms-flex-align: center;
               align-items: center; }
 
+  a:focus {
+    outline: 0; }
+
   .check {
     display: inline-block;
     border: 2px solid #006aba;
