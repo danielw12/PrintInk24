@@ -410,7 +410,7 @@ footer {
 
     .contact,
     .offer {
-        padding: 20px 15px;
+        padding: 20px 29px;
 
         h4 {
             font-weight: bold;
@@ -506,7 +506,15 @@ footer {
 }
 
 
-
+.rodo {
+    text-align: center;
+    font-size: 14px;
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
 
 
 /* RWD */

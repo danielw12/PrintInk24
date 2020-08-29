@@ -296,7 +296,7 @@ footer {
             hyphens: none; }
   footer .contact,
   footer .offer {
-    padding: 20px 15px; }
+    padding: 20px 29px; }
     footer .contact h4,
     footer .offer h4 {
       font-weight: bold;
@@ -376,6 +376,13 @@ footer {
 
 .weight {
   font-weight: bold; }
+
+.rodo {
+  text-align: center;
+  font-size: 14px; }
+  .rodo a {
+    text-decoration: none;
+    color: white; }
 
 /* RWD */
 @media (max-width: 426px) {
