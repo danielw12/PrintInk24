@@ -7,9 +7,6 @@ body {
   background-size: 37.5px;
   background-repeat: repeat; }
 
-/*a {
-    display: inline-block;
-}*/
 a:hover {
   text-decoration: none; }
 
@@ -74,7 +71,7 @@ h2 {
     height: 100% !important; } }
 @media (min-width: 1200px) {
   .bg-left div:not(.check) {
-    padding-left: calc((100vw - 1140px) / 2) !important; }
+    padding-left: calc((100vw - 1124px) / 2) !important; }
 
   .slick-dots {
     left: calc((100vw - 1175px) / 2) !important; } }
