@@ -33,7 +33,7 @@ h2 {
     text-transform: uppercase;
 
     text-shadow: 3px 3px 1px #152b58e6;
-    
+
 }
 
 .space {
@@ -42,7 +42,7 @@ h2 {
 }
 
 .nav-box {
-    background-color: #152b58e6; 
+    background-color: #152b58e6;
     position: sticky;
     top: 0;
     z-index: 3000;
@@ -99,6 +99,28 @@ h2 {
     }
 }
 
+@media (max-width: 1569px) {
+    .bg-right {
+        img {
+            height: 100% !important;
+        }
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .bg-left {
+        div:not(.check) {
+            padding-left: calc((100vw - 1140px) / 2) !important;
+        }
+    }
+
+    .slick-dots {
+        left: calc((100vw - 1175px) / 2) !important;
+    }
+}
+
 
 @media (min-width: 992px) {
     .slide {
@@ -110,14 +132,13 @@ h2 {
 
             div:not(.check) {
                 background-color: white !important;
-                padding-left: 20% !important;
                 padding-top: 5% !important;
 
                 h3,
                 p {
                     color: #006aba !important;
                     text-align: left !important;
-                    margin-left: 50px;
+
                 }
             }
 
@@ -128,7 +149,7 @@ h2 {
 
 
                 .logo {
-                    margin: 30px !important;
+                    margin: 30px 30px 30px -19px !important;
                     width: 130px !important;
                 }
 
@@ -145,29 +166,25 @@ h2 {
 
         .bg-right {
             display: flex !important;
-            width: 130%;
+            width: 100%;
             height: 100%;
             align-items: center;
-            
-            img {
-                height: 100%;
-            }
+
         }
     }
 
     a:focus {
-    outline: 0;
-} 
-    
+        outline: 0;
+    }
+
     .check {
         border: 2px solid #006aba;
         color: #006aba;
         padding: 10px;
         font-weight: bold;
-        margin-left: 50px;
         margin-top: 10px;
     }
-    
+
     .check:hover {
         background-color: #006aba;
         color: white;
@@ -176,9 +193,8 @@ h2 {
     .slick-dots {
         bottom: 33px !important;
         text-align: left;
-        left: 10%;
         margin-left: 20px;
-
+        left: calc((100vw - 960px) / 2);
 
 
         .slick-active {
@@ -187,7 +203,7 @@ h2 {
             }
         }
     }
-    
+
     .offer-element {
         padding: 20px 20px !important;
     }
@@ -210,7 +226,7 @@ header {
         width: 100%;
         height: 100%;
         box-shadow: 0 10px 20px #152b58e6;
-        
+
 
 
         .slide {
@@ -254,28 +270,22 @@ header {
                     background-color: rgba(0, 107, 187, 0.5);
                     width: 100%;
                     height: 100%;
-                    padding: 10%;
-                   
+                    padding-top: 10%;
+                    padding-bottom: 10%;
+                    padding-right: 10%;
+                    padding-left: 10%;
                 }
 
                 .middle {
                     margin: 0 auto;
-                    /* display: flex;
-                    margin-bottom: 50px;
-
-                    padding-top: 50px;*/
-
 
                     .logo {
                         margin: 0 auto;
                         width: 96px;
-                        /* filter: invert(1);*/
                         max-height: 130px;
                     }
 
                     p {
-                        /*margin-top: 38px;
-                        margin-left: 10px;*/
                         color: white;
                         text-decoration: none;
                         font-size: 20px;
@@ -289,8 +299,6 @@ header {
                 p {
                     text-align: center;
                     color: white;
-                    /*  margin-left: 10px;
-                    margin-right: 80px;*/
                 }
 
                 h3 {
@@ -318,9 +326,7 @@ header {
     .slick-dots {
 
         bottom: 19px;
-        /*  bottom: 300px;
-        left: -510px;*/
-
+ 
         li {
             button {
                 height: 40px;
@@ -523,12 +529,12 @@ footer {
 .rodo {
     text-align: center;
     font-size: 14px;
-    
+
     a {
         text-decoration: none;
         color: white;
     }
-    
+
     a:hover {
         color: #006aba;
     }
